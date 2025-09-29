@@ -1,0 +1,172 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background: #028a0f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 0 0 20px 20px;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 100px;
+}
+
+/* Barra de busca */
+.search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 6px 70px;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 6px 15px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #028a0f;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: #ddd;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Ícone do usuário */
+.user-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.user-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção de perfil */
+#textos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #028a0f;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Imagem de perfil */
+.perfil-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+/* Cards de imóveis */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #048811;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Localização e Contato */
+.localizacao, .contato {
+   text-align: left ;
+    margin-top: 20px;
+}
+
+.localizacao h2, .contato h2 {
+    margin-bottom: 10px;
+}
+
+.contato p {
+    margin: 5px 0;
+}
+
+/* Divisória */
+.section-divider {
+    height: 2px;
+    background: #028a0f;
+    margin: 40px 0;
+}
+
+/* Responsividade (opcional para ajustar layout em dispositivos menores) */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input {
+        padding: 6px 30px;
+    }
+}

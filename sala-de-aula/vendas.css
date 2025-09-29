@@ -1,0 +1,137 @@
+/* Reset e padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(/img/Design\ sem\ nome.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- Cabeçalho --- */
+header {
+  background: #528537;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-radius: 0 0 20px 20px;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 100px;
+}
+
+.barra-pesquisa {
+  display: flex;
+  gap: 5px;
+}
+
+.barra-pesquisa input {
+  padding: 6px 70px;
+  border-radius: 10px;
+  border: none;
+}
+
+.barra-pesquisa button {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #028a0f;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.barra-pesquisa button:hover {
+  background: #ddd;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.icone-usuario {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.icone-usuario a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Imóveis --- */
+.imovel {
+  background: #6fa34e;
+  border: 8px solid #4d7c2b;
+  border-radius: 10px;
+  margin: 24px;
+  padding: 8px 12px 12px 12px;
+  width: 98%;
+  max-width: 99vw;
+  position: relative;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* grade de casas */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 120px 70px; /* cima maior, baixo menor */
+  gap: 12px;
+}
+
+.casa,
+.especificacao {
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+  }
+
+/* Imagem dentro da casa */
+.casa img {
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+footer {
+    background: #528537;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
